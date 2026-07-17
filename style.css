@@ -1,0 +1,85 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+}
+
+body{
+background:#ececec;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.35);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.popup{
+width:330px;
+background:#2c2c2e;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(0,0,0,.45);
+animation:pop .25s ease;
+}
+
+@keyframes pop{
+from{
+transform:scale(.85);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+.popup h2{
+font-size:22px;
+font-weight:600;
+color:#fff;
+padding:22px 18px 10px;
+text-align:center;
+}
+
+.popup p{
+color:#fff;
+font-size:17px;
+line-height:1.45;
+padding:0 18px 20px;
+text-align:center;
+}
+
+.buttons{
+display:flex;
+border-top:1px solid rgba(255,255,255,.15);
+}
+
+.buttons button{
+flex:1;
+height:54px;
+border:none;
+background:transparent;
+font-size:20px;
+color:#0A84FF;
+cursor:pointer;
+}
+
+.buttons button:first-child{
+border-right:1px solid rgba(255,255,255,.15);
+}
+
+.buttons button:hover{
+background:rgba(255,255,255,.05);
+}
